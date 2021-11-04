@@ -174,9 +174,9 @@ namespace Transformacion_de_grados
             // 
             // rtbhistorial
             // 
-            this.rtbhistorial.Location = new System.Drawing.Point(203, 200);
+            this.rtbhistorial.Location = new System.Drawing.Point(466, 31);
             this.rtbhistorial.Name = "rtbhistorial";
-            this.rtbhistorial.Size = new System.Drawing.Size(300, 189);
+            this.rtbhistorial.Size = new System.Drawing.Size(340, 354);
             this.rtbhistorial.TabIndex = 6;
             this.rtbhistorial.Text = "";
             // 
@@ -184,7 +184,7 @@ namespace Transformacion_de_grados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(523, 450);
+            this.ClientSize = new System.Drawing.Size(834, 450);
             this.Controls.Add(this.rtbhistorial);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtingdat);

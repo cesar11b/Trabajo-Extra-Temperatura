@@ -42,38 +42,53 @@ namespace Transformacion_de_grados
             double kelcel = -272.15;
             double kelfar = -457.87;
 
-
+            string data1 = "";
+            string data2 = "";
           
 
             CuadroT cuadroT = new CuadroT();
 
-            if(rbCelcius.Checked && rbCelciusSal.Checked==true)
+            if (txtingdat.Text != "")
             {
 
-                Console.WriteLine("No se ve la necesidad para convertir grados celcius a grados celcius");
 
-            }
 
-            if (rbFahrenheit.Checked && rbFahrenheitSal.Checked == true)
-            {
 
-                Console.WriteLine("No se ve la necesidad para convertir grados Fahrenheit a grados Fahrenheit");
 
-            }
+                if (rbCelcius.Checked && rbCelciusSal.Checked == true)
+                {
 
-            if (rbKelvin.Checked && rbKelvinSal.Checked == true)
-            {
+                    Console.WriteLine("No se ve la necesidad para convertir grados celcius a grados celcius");
 
-                Console.WriteLine("No se ve la necesidad para convertir grados Kelvin a grados Kelvin");
+                }
 
-            }
+                if (rbFahrenheit.Checked && rbFahrenheitSal.Checked == true)
+                {
 
-            if(rbCelcius.Checked && rbFahrenheitSal.Checked == true)
-            {
-                
+                    Console.WriteLine("No se ve la necesidad para convertir grados Fahrenheit a grados Fahrenheit");
 
-                cuadroT.CuadrosT(ungrado, celfar, txtingdat.Text);
+                }
 
+                if (rbKelvin.Checked && rbKelvinSal.Checked == true)
+                {
+
+                    Console.WriteLine("No se ve la necesidad para convertir grados Kelvin a grados Kelvin");
+
+                }
+
+                if (rbCelcius.Checked && rbFahrenheitSal.Checked == true)
+                {
+
+
+                    cuadroT.CelFar(txtingdat.Text);
+                    data1= rtbhistorial.Text;
+                    data2 = data1;
+
+                    rtbhistorial.Text = $"" + data2 + txtingdat.Text + " celcius en fahrenheit equivalen a " + cuadroT.CelFar(txtingdat.Text) + " grados respectivamente";
+
+
+
+                }
 
             }
         }
