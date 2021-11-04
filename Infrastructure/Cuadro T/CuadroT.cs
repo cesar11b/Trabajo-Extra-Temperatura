@@ -64,7 +64,7 @@ namespace Infrastructure.Cuadro_T
         {
             double dat = (int)Convert.ToDouble(c);
 
-            double dato = (dat - 32) * (5 / 9) + 273.15;
+            double dato = dat - 273.15;
 
             string data = Convert.ToString(dato);
 
@@ -72,6 +72,17 @@ namespace Infrastructure.Cuadro_T
 
         }
 
+        public string kelfar(string c)
+        {
+            double dat = (int)Convert.ToDouble(c);
+
+            double dato = (dat - 273.15)*(9/5)+32;
+
+            string data = Convert.ToString(dato);
+
+            return data;
+
+        }
 
 
     }

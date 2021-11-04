@@ -90,6 +90,76 @@ namespace Transformacion_de_grados
 
                 }
 
+                if (rbCelcius.Checked && rbKelvinSal.Checked == true)
+                {
+
+
+                    cuadroT.Celkel(txtingdat.Text);
+                    data1 = rtbhistorial.Text;
+                    data2 = data1;
+
+                    rtbhistorial.Text = $"" + data2 + txtingdat.Text + " celcius en kelvin equivalen a " + cuadroT.Celkel(txtingdat.Text) + " grados respectivamente";
+
+
+
+                }
+
+                if (rbFahrenheit.Checked && rbCelciusSal.Checked == true)
+                {
+
+
+                    cuadroT.farcel(txtingdat.Text);
+                    data1 = rtbhistorial.Text;
+                    data2 = data1;
+
+                    rtbhistorial.Text = $"" + data2 + txtingdat.Text + " fahrenheit en celcius equivalen a " + cuadroT.farcel(txtingdat.Text) + " grados respectivamente";
+
+
+
+                }
+
+                 if (rbFahrenheit.Checked && rbKelvinSal.Checked == true)
+                {
+
+
+                    cuadroT.farkel(txtingdat.Text);
+                    data1 = rtbhistorial.Text;
+                    data2 = data1;
+
+                    rtbhistorial.Text = $"" + data2 + txtingdat.Text + " fahrenheit en kelvin equivalen a " + cuadroT.farkel(txtingdat.Text) + " grados respectivamente";
+
+
+
+                }
+
+                if (rbKelvin.Checked && rbCelciusSal.Checked == true)
+                {
+
+
+                    cuadroT.kelcel(txtingdat.Text);
+                    data1 = rtbhistorial.Text;
+                    data2 = data1;
+
+                    rtbhistorial.Text = $"" + data2 + txtingdat.Text + " kelvin en celcius equivalen a " + cuadroT.kelcel(txtingdat.Text) + " grados respectivamente";
+
+
+
+                }
+
+
+                if (rbKelvin.Checked && rbFahrenheitSal.Checked == true)
+                {
+
+
+                    cuadroT.kelfar(txtingdat.Text);
+                    data1 = rtbhistorial.Text;
+                    data2 = data1;
+
+                    rtbhistorial.Text = $"" + data2 + txtingdat.Text + " kelvin en fahrenheit equivalen a " + cuadroT.kelfar(txtingdat.Text) + " grados respectivamente";
+
+
+
+                }
             }
         }
     }
